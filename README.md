@@ -1,2 +1,7 @@
-# hms-client-api
-Hive Metastore Client API
+# Hive Metastore Client API 
+
+## Build
+
+```
+mvn clean package
+```
