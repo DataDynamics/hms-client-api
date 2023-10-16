@@ -24,3 +24,16 @@ mvn clean package
 * libfb-303-0.9.3
 
 해당 라이브러리를 add-jars로 추가해야 합니다. spring boot는 repackaging true로 설정합니다.
+
+YAML 설정시
+* metastore uris : thrift://1.1.1.1:9081
+* concurrent-support : true
+* transaaction-manager-supporet: true
+* transaction-manager-class: org.apache.hadoop.hive.ql.lockmgr.DbTxnManager
+
+```java
+HiveConf conf  = new HiveConf(HiveUtils.class);
+conf.setVar(HiveCOnf.COnfVars.HIVE_TXN_MANAGER, "");
+conf.setBooVar(HiveConf.ConfVars.HIVE_SUPPORT_CONCURRENC, true);
+conf.setVar(HiveConf.ConfVars.METASTOREUIRS, "");
+```
