@@ -20,7 +20,9 @@ mvn clean package
 * hive-shims-1.2.10000
 * hive-shims-common-1.2.10000
 * hive--shims-common-1.2.10000
-* htrace-core-3.1.0-incubating
+* htrace-core4-4.1.0-incubating
+* stax2-api-3.1.4
+* woodstox-core-5.0.3.jar
 * libfb-303-0.9.3
 
 해당 라이브러리를 add-jars로 추가해야 합니다. spring boot는 repackaging true로 설정합니다.
